@@ -1,12 +1,12 @@
 import {MouseEventHandler} from 'react'
 export interface CustomButtonProps{
+    isDisabled?: boolean;
     title:string;
     containerStyles?:string;
-    handleClick?:
-    MouseEventHandler<HTMLButtonElement>;
-    BtnType?:'button' | 'submit';
+    handleClick?:MouseEventHandler<HTMLButtonElement>;
+    btnType?: "button" | "submit";
     textStyles?:string;
-    rightIcon:string;
+    rightIcon?:string;
 } 
 export interface SearchManufacturerProps{
     manufacturer:string;
